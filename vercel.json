@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://$RAILWAY_PUBLIC_DOMAIN/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
